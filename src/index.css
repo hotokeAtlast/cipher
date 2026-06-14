@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* Custom Scrollbar for Webkit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* The track (background) */
+::-webkit-scrollbar-track {
+  background: #111214; /* Matches your channel sidebar */
+  border-radius: 4px;
+}
+
+/* The draggable handle */
+::-webkit-scrollbar-thumb {
+  background: #2b2d31; /* Subtle gray */
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3f4147; /* Slightly lighter gray when interacting */
+}
+
+/* Firefox compatibility */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2b2d31 #111214;
+}
